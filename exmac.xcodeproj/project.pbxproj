@@ -63,6 +63,7 @@
 			packageReferences = (
 				A4BF898E2A327129006611B8 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
 				A4BF89932A32717D006611B8 /* XCRemoteSwiftPackageReference "swift-certificates" */,
+				A4BF89952A327722006611B8 /* XCRemoteSwiftPackageReference "hello-github-actions" */,
 			);
 			projectDirPath = "";
 			projectRoot = "";
@@ -243,6 +244,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.1.0;
+			};
+		};
+		A4BF89952A327722006611B8 /* XCRemoteSwiftPackageReference "hello-github-actions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Jeverett3000/hello-github-actions";
+			requirement = {
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
