@@ -23,9 +23,17 @@
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/jennifereverett/Documents/syncthing Localizations";
 			dependencies = (
 			);
 			name = exmac;
+			packageProductDependencies = (
+				A4BF898F2A327129006611B8 /* AsyncAlgorithms */,
+				A4BF89902A327129006611B8 /* AsyncAlgorithms_XCTest */,
+				A4BF89912A327129006611B8 /* AsyncSequenceValidation */,
+				A4BF89922A327129006611B8 /* _CAsyncSequenceValidationSupport */,
+				A4BF89942A32717D006611B8 /* X509 */,
+			);
 			passBuildSettingsInEnvironment = 1;
 			productName = exmac;
 		};
@@ -52,6 +60,10 @@
 				Base,
 			);
 			mainGroup = A4BF89832A326D95006611B8;
+			packageReferences = (
+				A4BF898E2A327129006611B8 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
+				A4BF89932A32717D006611B8 /* XCRemoteSwiftPackageReference "swift-certificates" */,
+			);
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -215,6 +227,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4BF898E2A327129006611B8 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-async-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+		A4BF89932A32717D006611B8 /* XCRemoteSwiftPackageReference "swift-certificates" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-certificates.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4BF898F2A327129006611B8 /* AsyncAlgorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4BF898E2A327129006611B8 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncAlgorithms;
+		};
+		A4BF89902A327129006611B8 /* AsyncAlgorithms_XCTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4BF898E2A327129006611B8 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncAlgorithms_XCTest;
+		};
+		A4BF89912A327129006611B8 /* AsyncSequenceValidation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4BF898E2A327129006611B8 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncSequenceValidation;
+		};
+		A4BF89922A327129006611B8 /* _CAsyncSequenceValidationSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4BF898E2A327129006611B8 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = _CAsyncSequenceValidationSupport;
+		};
+		A4BF89942A32717D006611B8 /* X509 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4BF89932A32717D006611B8 /* XCRemoteSwiftPackageReference "swift-certificates" */;
+			productName = X509;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A4BF89842A326D95006611B8 /* Project object */;
 }
